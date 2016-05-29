@@ -19,6 +19,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+copyrightyear: 2016
 
 gems: [jekyll-assets, github-pages, uglifier]
 
