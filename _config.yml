@@ -27,3 +27,12 @@ assets:
     compress:
         js: uglifier
         css: sass
+    
+    assets:
+      # photoswipe assets
+      - "default-skin.png"
+      - "default-skin.svg"
+      - "preloader.gif"
+
+    sources:
+      - _assets/photoswipe
