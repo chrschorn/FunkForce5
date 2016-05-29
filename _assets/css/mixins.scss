@@ -1,0 +1,84 @@
+// Bootstrap Button Variant
+
+@mixin button-variant($color, $background, $border)
+{
+	color: $color;
+	background-color: $background;
+	border-color: $border;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+	.open .dropdown-toggle {
+		color: $color;
+		background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+	}
+	&:active,
+	&.active,
+	.open .dropdown-toggle {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			background-color: $background;
+			border-color: $border;
+		}
+	}
+
+	.badge {
+		color: $background;
+		background-color: $color;
+	}
+}
+
+// Background Features
+
+@mixin background-cover()
+{
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    -o-background-size: 100%;
+}
+
+// text shadow
+@mixin text-shadow()
+{
+	text-shadow: 3px 3px 3px $shadow-color;
+}
+
+@mixin navbar-shadow()
+{
+	text-shadow: 2px 2px 2px $shadow-color;
+}
+
+// Font Selections
+
+@mixin serif-font()
+{
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin signature-font()
+{
+	font-family: "airstreamregular", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+@mixin body-font()
+{
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin heading-font()
+{
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
