@@ -49,6 +49,10 @@ a {
 	color: $brand-primary;
 }
 
+a.facebook {
+	font-weight: bold;
+}
+
 a:hover,
 a:focus,
 a:active,
@@ -361,6 +365,10 @@ section#info {
 	.info-text {
 		font-size: 2em;
 	}
+
+	.event {
+		margin-bottom: 30px;
+	}
 }
 
 // Music Section
@@ -466,7 +474,7 @@ section#gallery {
             border-radius: 100%;
             border: 7px solid #f1f1f1;
             text-align: center;
-            h4 {
+            h3 {
             	font-size: 10px;
             	margin-top: 12px;
             	line-height: 14px;
@@ -474,6 +482,17 @@ section#gallery {
         }
 		.last {
 			background-color: $brand-primary;
+			a {
+				color: white;
+			}
+		}
+		.text{
+			background-color: white;
+			h3 {
+				color: $brand-primary;
+				@include signature-font();
+			}
+
 		}
         &.timeline-inverted > .timeline-panel {
             float: right;
@@ -497,7 +516,7 @@ section#gallery {
         }
     }
 	.timeline-heading {
-		h4 {
+		h3 {
 		    margin-top: 0;
 		    color: inherit;
 		    &.subheading {
@@ -532,7 +551,7 @@ section#gallery {
 	            height: 100px;
 	            left: 50%;
 	            margin-left: -50px;
-	            h4 {
+	            h3 {
 	            	font-size: 13px;
 	            	margin-top: 16px;
 	            	line-height: 18px;
@@ -558,7 +577,7 @@ section#gallery {
 	            width: 150px;
 	            height: 150px;
 	            margin-left: -75px;
-	            h4 {
+	            h3 {
             		font-size: 18px;
 	            	margin-top: 30px;
 	            	line-height: 26px;
@@ -582,7 +601,7 @@ section#gallery {
 	            width: 170px;
 	            height: 170px;
 	            margin-left: -85px;
-	            h4 {
+	            h3 {
 	            	margin-top: 40px;
 	            }
 	        }
@@ -640,6 +659,9 @@ section#contact {
 	background-image: url('../img/map-image-inv.png');
 	background-position: center;
 	background-repeat: no-repeat;
+	h2 a {
+		font-weight: bold;
+	}
 	.form-group {
 		margin-bottom: 25px;
 		input,
@@ -762,5 +784,13 @@ body {
 section#privacy {
 	p {
 		text-align: justify;
+	}
+}
+
+@media(max-width: 768px) {
+	section#privacy {
+		h1 {
+			font-size: 1.5em;
+		}
 	}
 }

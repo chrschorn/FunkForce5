@@ -20,6 +20,11 @@ rvm use 2.2
 * Setup in this directory:
 
 ```
-gem install bundle
+gem install bundler
 bundle install 
 ```
+
+* Setup a JavaScript runtime
+
+```
+gem install execjs

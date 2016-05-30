@@ -1,10 +1,52 @@
 ---
 layout: default
 firstsection: "#info"
+
+images:
+  -
+    file: shoot-1
+    alt: Fotoshoot Aufnahme (von schräg unten)
+    caption: Fotoshoot Aufnahme
+    author: Niklas Rothhanns
+  -
+    file: shoot-2
+    alt: Fotoshoot Aufnahme (von vorne)
+    caption: Fotoshoot Aufnahme
+    author: Niklas Rothhanns
+  -
+    file: werkstatt-1
+    alt: Konzert im Probenraum
+    caption: Konzert im Probenraum
+    author: unkown
+  -
+    file: jazztage2015-1
+    alt: Gruppenbild beim Auftritt Jazztage 2015
+    caption: Funk Force 5 auf den Jazztagen 2015
+    author: Dietmar Schorn
+  -
+    file: jazztage2015-2
+    alt: Nils Buchna am Schlagzeug, Jazztage 2015
+    caption: Nils Buchna am Schlagzeug, Jazztage 2015
+    author: Dietmar Schorn
+  -
+    file: jazztage2015-3
+    alt: Bild einer aufnehmenden Videokamera Jazztage 2015
+    caption: Publikum filmt Auftritt Jazztage 2015
+    author: Niklas Rothhanns
+  -
+    file: jazztage2015-4
+    alt: Nathalie Krautgartner beim Singen Jazztage 2015
+    caption: Nathalie Krautgartner live in action, Jazztage 2015
+    author: Dietmar Schorn
+  -
+    file: jazztage2015-5
+    alt: Gruppenbild von vorne Jazztage 2015
+    caption: Funk Force 5 auf der Bühne, Jazztage 2015
+    author: Dietmar Schorn
 ---
 
 <!-- Info Section -->
-<section id="info" class="bg-light-gray srgroup" data-removeon="2016-06-05T22:00:00.000Z">
+<section id="info" class="bg-light-gray ">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -12,23 +54,32 @@ firstsection: "#info"
       </div>
     </div>
 
-    <div class="row sreveal">
-      <div class="col-lg-12 text-center">
-        <h2>Jazztage Düren</h2>
+    <div class="container-fluid event srgroup" data-removeon="2016-06-05T22:00:00.000Z">
+      <div class="row sreveal">
+        <div class="col-lg-12 text-center">
+          <h2>Jazztage Düren</h2>
+        </div>
+      </div>
+
+      <div class="info-text row sreveal">
+        <div class="col-lg-12 text-center">
+          <i class="fa fa-location-arrow fa-fw"></i> Hauptbühne Kaiserplatz Düren
+        </div>
+      </div>
+
+      <div class="info-text row sreveal">
+        <div class="col-lg-12 text-center">
+          <i class="fa fa-calendar fa-fw"></i> 5. Juni <i class="fa fa-clock-o fa-fw"></i> 12:00
+        </div>
       </div>
     </div>
 
-    <div class="info-text row sreveal">
+    <div class="info-text row">
+      <div class="col-lg-12 text-center">
+        Für mehr Infos: <a href="{{ site.facebook_url }}" class="facebook">Facebook</a>
+      </div>
+    </div>
 
-      <div class="col-lg-12 text-center">
-        <i class="fa fa-location-arrow fa-fw"></i> Hauptbühne Kaiserplatz Düren
-      </div>
-    </div>
-    <div class="info-text row sreveal">
-      <div class="col-lg-12 text-center">
-        <i class="fa fa-calendar fa-fw"></i> 5. Juni <i class="fa fa-clock-o fa-fw"></i> 12:00
-      </div>
-    </div>
 
     <div class="row text-center">
       <a href="#music" class="page-scroll btn btn-next">
@@ -54,15 +105,15 @@ firstsection: "#info"
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
                 </span>
-        <h4 class="music-heading">Wir lieben</h4>
-        <p class="text-muted">alles was groovt! Funk, Soul und Disco sind unsere Leidenschaft, weil jeder Spaß daran hat.</p>
+        <h3 class="music-heading">Wir lieben</h3>
+        <p class="text-muted">alles was groovt! Funk, Soul und Disco sind unsere Leidenschaft und der Grund warum wir einmal pro Woche alles stehen und liegen lassen um an unserem Sound zu feilen!</p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 sreveal">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-music fa-stack-1x fa-inverse"></i>
                 </span>
-        <h4 class="music-heading">Wir spielen</h4>
+        <h3 class="music-heading">Wir spielen</h3>
         <p class="text-muted">Musik von Künstlern, die viele noch aus ihrer Kindheit kennen. Bis zurück in die 70er sind wir ständig auf der Suche nach neuen Songs für unser Repertoire!</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-offset-0 col-md-4 sreveal">
@@ -70,7 +121,7 @@ firstsection: "#info"
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-star fa-stack-1x fa-inverse"></i>
                 </span>
-        <h4 class="music-heading">Wir bieten</h4>
+        <h3 class="music-heading">Wir bieten</h3>
         <p class="text-muted">Unterhaltung, Leidenschaft und musikalisches Können. Ob für ruhige Abende oder die ganz große Bühne: wir haben die richtigen Songs!</p>
       </div>
     </div>
@@ -95,120 +146,7 @@ firstsection: "#info"
   </div>
 </section>
 
-<!-- Gallery Grid Section -->
-<section id="gallery" class="bg-light-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="section-heading">Galerie</h1>
-        <h2 class="section-subheading text-muted">Eindrücke von einigen tollen Events</h2>
-      </div>
-    </div>
-
-    <!-- Gallery -->
-    <div class="gallery srgroup" itemscope itemtype="http://schema.org/ImageGallery">
-      <div class="row">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-6 col-md-3 sreveal">
-          <a href="img/large-image.jpg" itemprop="contentUrl" data-size="600x515" data-author="Christoph" class="thumbnail">
-            <img src="img/small-image.jpg" itemprop="thumbnail" alt="Image description" />
-          </a>
-          <figcaption itemprop="caption description">Image caption</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-6 col-md-3 sreveal">
-          <a href="img/large-image.jpg" itemprop="contentUrl" data-size="600x515" data-author="Christoph" class="thumbnail">
-            <img src="img/small-image.jpg" itemprop="thumbnail" alt="Image description" />
-          </a>
-          <figcaption itemprop="caption description">Image caption</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-6 col-md-3 sreveal">
-          <a href="img/large-image.jpg" itemprop="contentUrl" data-size="600x515" data-author="Christoph" class="thumbnail">
-            <img src="img/small-image.jpg" itemprop="thumbnail" alt="Image description" />
-          </a>
-          <figcaption itemprop="caption description">Image caption</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-6 col-md-3 sreveal">
-          <a href="img/large-image.jpg" itemprop="contentUrl" data-size="600x515" data-author="Christoph" class="thumbnail">
-            <img src="img/small-image.jpg" itemprop="thumbnail" alt="Image description" />
-          </a>
-          <figcaption itemprop="caption description">Image caption</figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <div class="row text-center">
-      <a href="#repertoire" class="page-scroll btn btn-next">
-        <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
-      </a>
-    </div>
-  </div>
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-          PhotoSwipe keeps only 3 of them in the DOM to save memory.
-          Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include gallery.html %}
 
 <!-- Repertoire Section -->
 <section id="repertoire">
@@ -216,7 +154,7 @@ firstsection: "#info"
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="section-heading">Repertoire</h1>
-        <h2 class="section-subheading text-muted">Ein kleiner Auszug unseres ständig wachsenden Repertoires!</h2>
+        <h2 class="section-subheading text-muted">Ein kleiner Auszug unseres ständig wachsenden Repertoires</h2>
       </div>
     </div>
 
@@ -246,27 +184,27 @@ firstsection: "#info"
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="section-heading">Die Band</h1>
-        <h2 class="section-subheading text-muted">Wer spielt da eigentlich?</h2>
+        <h2 class="section-subheading text-muted">Wer spielt da eigentlich? Mehr gibt's auch auf <a href="{{ site.facebook_url }}" class="facebook">Facebook</a>!</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-4 sreveal">
         <div class="band-member">
-          <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+          <img src="img/band/nathalie.jpg" class="img-responsive img-circle" alt="">
           <h3>Nathalie Krautgartner</h3>
           <p class="text-muted">Lead Vocals</p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="band-member sreveal">
-          <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+          <img src="img/band/christoph.jpg" class="img-responsive img-circle" alt="">
           <h3>Christoph Schorn</h3>
           <p class="text-muted">Keys</p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="band-member sreveal">
-          <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+          <img src="img/band/lukas.jpg" class="img-responsive img-circle" alt="">
           <h3>Lukas Hayter</h3>
           <p class="text-muted">Guitar / Vocals</p>
         </div>
@@ -276,14 +214,14 @@ firstsection: "#info"
     <div class="row">
       <div class="col-sm-offset-2 col-sm-4">
         <div class="band-member sreveal">
-          <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+          <img src="img/band/dustin.jpg" class="img-responsive img-circle" alt="">
           <h3>Dustin Gooßens</h3>
           <p class="text-muted">Bass</p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="band-member sreveal">
-          <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+          <img src="img/band/nils.jpg" class="img-responsive img-circle" alt="">
           <h3>Nils Buchna</h3>
           <p class="text-muted">Drums / Vocals</p>
         </div>
@@ -293,7 +231,7 @@ firstsection: "#info"
 
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <p class="large text-muted">Wir sind leidenschaftliche Musiker, die sich "schon eine gefühlte Ewigkeit" kennen. Wir vereinen Band- und Bühnenerfahrung aus verschiedensten Projekten aller möglichen Genres.</p>
+        <p class="large text-muted">Wir sind fünf leidenschaftliche Musiker, die jahrelange Band- und Bühnenerfahrung aus verschiedensten Projekten vereinen um Funk, Soul und Disco Musik zu machen, die jeden begeistert.</p>
       </div>
     </div>
 
@@ -311,7 +249,7 @@ firstsection: "#info"
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="section-heading">Biografie</h1>
-        <h2 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2 class="section-subheading text-muted">Fünf junge Leute spielen Disco Musik? Wie konnte das denn passieren?</h2>
       </div>
     </div>
     <div class="row">
@@ -319,66 +257,69 @@ firstsection: "#info"
         <ul class="timeline">
           <li class="sreveal">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+              <img class="img-circle img-responsive" src="img/timeline/questionmark.jpg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>2009-2011</h4>
-                <h4 class="subheading">Our Humble Beginnings</h4>
+                <h3>Ende 2013</h3>
+                <h4 class="subheading">Unsere Entstehung</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">Unsere Schulzeit ging zu Ende und so auch die Ära zahlreicher Schulmusik Projekte. Also was tun? Während einer letzten gemeinsamen Konzertreise mit der GaW Bigband entsprang die Idee, eine ganz eigene Band zu gründen.</p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted sreveal">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+              <img class="img-circle img-responsive" src="img/timeline/ff5-logo-mini.jpg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>March 2011</h4>
-                <h4 class="subheading">An Agency is Born</h4>
+                <h3>Anfang 2014</h3>
+                <h4 class="subheading">Funk? Covern? Eigene Songs?</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">Anfangs noch zu viert in einem Wohnzimmer starteten wir mit eigenen Songs. Schnell war klar: es muss grooven. Warum gibt es davon bloß so viel geile Funk Musik? Und Tanzen kann man dazu auch noch... Perfekt!</p>
               </div>
             </div>
           </li>
           <li class="sreveal">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+              <img class="img-circle img-responsive" src="img/timeline/erstkonzert.jpg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>December 2012</h4>
-                <h4 class="subheading">Transition to Full Service</h4>
+                <h3>"Irgendwann" 2014</h3>
+                <h4 class="subheading">Gründungskonzert</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">Nach dem erfolgreichen ersten Konzert für Freunde und Bekannte war das Bestehen dann gefestigt. Der "feel good" Charakter von Funk, Soul und Disco reißt einfach jeden mit! Es wird Zeit noch weiter am Sound zu feilen...</p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted sreveal">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+              <img class="img-circle img-responsive" src="img/timeline/jazztage2015.jpg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>July 2014</h4>
-                <h4 class="subheading">Phase Two Expansion</h4>
+                <h3>August 2015</h3>
+                <h4 class="subheading">Jazztage Düren</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">Eine besondere Ehre für eine noch so neue Band: ein Konzert auf der Jazztage Düren Hauptbühne! Trotz Regen kamen knapp 300 begeisterte Zuhörer zusammen. Was ein Auftritt!</p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted sreveal">
-            <div class="timeline-image last">
-              <h4>Be Part
-                <br>Of Our
-                <br>Story!</h4>
-            </div>
+            <a href="{{ site.facebook_url }}">
+              <div class="timeline-image last">
+                <h3>Folgt
+                  <br>uns auf
+                  <br><i class="fa fa-lg fa-facebook-official" aria-hidden="true"></i>
+                </h3>
+              </div>
+            </a>
           </li>
         </ul>
       </div>

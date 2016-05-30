@@ -50,9 +50,11 @@ $(function() {
 
 // remove info on date
 $(function() {
-    $info = $("#info");
-    if (new Date() > new Date($info.attr("data-removeon")))
-        $info.hide();
+    $("#info .event").each(function() {
+        var $event = $(this);
+        if (new Date() > new Date($event.attr("data-removeon")))
+            $event.hide();
+    });
 });
 
 // scroll to top button
