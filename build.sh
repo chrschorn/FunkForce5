@@ -1,2 +1,2 @@
 rm -rf .asset-cache _site
-jekyll build --watch
+jekyll build --watch --force_polling

@@ -42,11 +42,11 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-	outline: none;
+	//outline: none;
 }
 
 a {
-	color: $brand-primary;
+	//color: $brand-primary;
 }
 
 a.facebook {
@@ -57,7 +57,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-	color: darken($brand-primary, 10%);
+	//color: darken($brand-primary, 10%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -262,7 +262,7 @@ header {
 	text-align: center;
 	color: white;
 	.intro-text {
-		padding-top: 45%;
+		padding-top: 55%;
 		padding-bottom: 5%;
 		.intro-lead-in {
 			@include serif-font();
@@ -286,7 +286,7 @@ header {
 @media(min-width: 400px) {
 	header{
 		.intro-text {
-			padding-top: 40%;
+			padding-top: 48%;
 		}
 	}
 }
@@ -294,7 +294,7 @@ header {
 @media(min-width: 600px) {
 	header{
 		.intro-text {
-			padding-top: 35%;
+			padding-top: 42%;
 		}
 	}
 }
@@ -303,8 +303,8 @@ header {
 	header {
 		//background: url('../img/header-bg.jpg') no-repeat scroll center center;
 		.intro-text {
-			padding-top: 28%;
-			padding-bottom: 2.5%;
+			padding-top: 30%;
+			padding-bottom: 7%;
 			.intro-lead-in {
 				@include serif-font();
 				font-style: italic;
@@ -777,7 +777,7 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: $brand-primary;
+    webkit-tap-highlight-color: $brand-primary;
 }
 
 // Datenschutz
