@@ -1,61 +1,9 @@
-{% assign ishome = false %}
-{% if page.url == "/" %}
-  {% assign ishome = true %}
-{% endif %}
-
-<body id="page-top" class="index">
-
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand page-scroll" href="{% if ishome %}#page-top{% else %}/{% endif %}">Funk Force 5</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="hidden">
-          <a href="#page-top"></a>
-        </li>
-        <li>
-          <a class="page-scroll" href="{% if ishome %}#music{% else %}/#_music{% endif %}">Musik</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="{% if ishome %}#gallery{% else %}/#_gallery{% endif %}">Galerie</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="{% if ishome %}#repertoire{% else %}/#_repertoire{% endif %}">Repertoire</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="{% if ishome %}#band{% else %}/#_band{% endif %}">Band</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="{% if ishome %}#bio{% else %}/#_bio{% endif %}">Bio</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="{% if ishome %}#contact{% else %}/#_contact{% endif %}">Kontakt</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-
 <header>
   <div class="container-fluid">
     <div class="intro-text">
-      <div class="intro-lead-in">Willkommen bei</div>
-      <div class="intro-heading">Funk Force 5</div>
-      <a href="{{ include.firstsection }}" class="page-scroll btn btn-next header"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></a>
+      <div class="intro-lead-in" {% if page.error404 %}style="visibility: hidden"{% endif %}>Willkommen bei</div>
+      <div class="intro-heading">{% if page.error404 %}404 Error{% else %}{{site.title}}{% endif %}</div>
+      <a href="{{ include.firstsection }}" class="page-scroll btn btn-next header" {% if page.error404 %}style="visibility: hidden"{% endif %}><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></a>
     </div>
   </div>
 </header>

@@ -259,7 +259,9 @@ $(function() {
                     }
                     captionEl.children[0].innerHTML = item.title +  '<br/><small>Photo: ' + item.author + '</small>';
                     return true;
-                }
+                },
+
+                shareEl: false
             };
 
             // PhotoSwipe opened from URL

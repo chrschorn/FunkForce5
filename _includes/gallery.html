@@ -9,27 +9,24 @@
         </div>
 
         <!-- Gallery -->
-        <div class="gallery srgroup" itemscope itemtype="http://schema.org/ImageGallery">
-            <div class="row">
-                {% assign lgext = "-large.jpg" %}
+        <div class="gallery srgroup row" itemscope itemtype="http://schema.org/ImageGallery" data-pswp-uid="1">
+            {% assign lgext = "-large.jpg" %}
 
-                {% for image in page.images %}
-                    {% assign img = image.file %}
-                    {% assign imglg = img | append: lgext %}
-                    {% assign alt = image.alt %}
-                    {% assign caption = image.caption %}
-                    {% assign auth = image.author %}
+            {% for image in page.images %}
+                {% assign img = image.file %}
+                {% assign imglg = img | append: lgext %}
+                {% assign alt = image.alt %}
+                {% assign caption = image.caption %}
+                {% assign auth = image.author %}
 
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-6 col-md-3 sreveal">
-                        <a href="{% asset_path '{{imglg}}' %}" itemprop="contentUrl" data-size="{{ assets[imglg].width }}x{{ assets[imglg].height }}" data-author="{{ auth }}" class="thumbnail">
-                            {% img '{{img}}' itemprop:'thumbnail' alt:'{{alt}}' %}
-                        </a>
-                        <figcaption itemprop="caption description">{{caption}}</figcaption>
-                    </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-6 col-md-3 sreveal">
+                    <a href="{% asset_path '{{imglg}}' %}" itemprop="contentUrl" data-size="{{ assets[imglg].width }}x{{ assets[imglg].height }}" data-author="{{ auth }}" class="thumbnail">
+                        {% img '{{img}}' itemprop:'thumbnail' alt:'{{alt}}' %}
+                    </a>
+                    <figcaption itemprop="caption description">{{caption}}</figcaption>
+                </figure>
 
-                {% endfor %}
-
-            </div>
+            {% endfor %}
         </div>
 
         <div class="row text-center">
