@@ -29,3 +29,7 @@ bundle install
 ```
 gem install execjs
 ```
+
+## Run
+
+Simply execute `source build.sh`. To test/host the built site using windows you can use `pyserve.bat`.
