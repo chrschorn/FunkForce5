@@ -1,6 +1,6 @@
 # Funk Force 5 Website
 ## Setup
-### Install ruby with with nvm
+### Install ruby with with rvm
 
 * Install rvm:
 
