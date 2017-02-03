@@ -53,8 +53,13 @@ $(function() {
     $("#info .event").each(function() {
         var $event = $(this);
         if (new Date() > new Date($event.attr("data-removeon")))
-            $event.hide();
+            $event.remove();
     });
+
+    if ($("#info .event").length < 1) {
+        $("#info").remove();
+        $("#music").css("padding-top", "100px");
+    }
 });
 
 // scroll to top button
