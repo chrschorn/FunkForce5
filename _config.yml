@@ -20,7 +20,7 @@ markdown: kramdown
 
 gems: [jekyll-assets, github-pages, uglifier]
 
-exclude: [build.sh, Gemfile, pyserve.bat, README.md]
+exclude: [build.sh, Gemfile, pyserve.bat, README.md, update_website_repo.bat]
 
 
 assets:
