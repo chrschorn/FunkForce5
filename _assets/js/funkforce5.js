@@ -59,6 +59,7 @@ $(function() {
     if ($("#info .event").length < 1) {
         $("#info").remove();
         $("#music").css("padding-top", "100px");
+        $("header a").attr("href", "#music");
     }
 });
 
