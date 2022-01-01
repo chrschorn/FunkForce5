@@ -1,4 +1,7 @@
 # Funk Force 5 Website
+
+Website for Germany-based Funk, Soul and Disco Band Funk Force 5: [www.funkforce5.de](https://www.funkforce5.de/)
+
 ## Setup
 ### Install ruby with with rvm
 
